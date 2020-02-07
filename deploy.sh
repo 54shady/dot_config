@@ -7,6 +7,7 @@ programs=(
 "ranger"
 "rofi"
 "terminator"
+"dunst"
 "zathura"
 )
 
