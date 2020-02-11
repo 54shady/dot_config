@@ -235,6 +235,7 @@ bindsym $mod+Right focus right
 # focus the parent container
 # bindsym $mod+$mod4+p focus parent
 
+## mpc hotkey for mpd ##
 # toggle audio pause
 bindsym $mod+p exec --no-startup-id "mpc toggle"
 # change to next/previous track
@@ -366,3 +367,7 @@ bindsym ctrl+$mod+m exec --no-startup-id xterm -geometry 150x30 -fs 55 -e ncmpcp
 # unicode emoji picker(grave is the '`' key above the tab)
 # using fictx shotkey "ctrl+;" get from xclip
 bindsym $mod+grave exec --no-startup-id emoji_picker
+
+# record audio and video
+bindsym $mod+Print exec --no-startup-id recordav
+bindsym $mod+Pause exec --no-startup-id recordav kill
