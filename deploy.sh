@@ -9,6 +9,7 @@ programs=(
 "terminator"
 "dunst"
 "zathura"
+"mpv"
 )
 
 for d in ${programs[@]}
