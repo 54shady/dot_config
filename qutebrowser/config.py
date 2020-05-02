@@ -1,0 +1,33 @@
+c.tabs.position = "bottom"
+c.auto_save.session = True
+c.url.searchengines = {
+    "DEFAULT": "https://www.baidu.com/s?wd={}",
+    "awk": "https://wiki.archlinux.org/?search={}",
+    "gwk": "https://wiki.gentoo.org/?search={}"
+}
+
+c.url.default_page = "https://www.baidu.com"
+c.fonts.default_size = "15pt"
+
+# Bindings for normal mode(Vimium compatible keybind)
+config.bind('x', 'tab-close')
+config.bind('X', 'undo')
+config.bind('J', 'tab-prev')
+config.bind('K', 'tab-next')
+
+config.bind('<Ctrl-p>', 'tab-prev', mode='normal')
+config.bind('<Ctrl-n>', 'tab-next', mode='normal')
+
+# Bindings for insert mode
+config.bind('<Ctrl-a>', 'fake-key <Home>', mode='insert')
+config.bind('<Ctrl-e>', 'fake-key <End>', mode='insert')
+config.bind('<Ctrl-d>', 'fake-key <Delete>', mode='insert')
+config.bind('<Ctrl-h>', 'fake-key <Backspace>', mode='insert')
+config.bind('<Ctrl-k>', 'fake-key <Ctrl-Shift-Right> ;; fake-key <Backspace>', mode='insert')
+config.bind('<Ctrl-f>', 'fake-key <Right>', mode='insert')
+config.bind('<Ctrl-b>', 'fake-key <Left>', mode='insert')
+config.bind('<Ctrl-n>', 'fake-key <Down>', mode='insert')
+config.bind('<Ctrl-p>', 'fake-key <Up>', mode='insert')
+#config.bind('i', 'enter-mode insert ;; spawn fcitx-remote -t')
+#config.bind('gi', 'hint inputs --first ;; spawn fcitx-remote -t')
+#config.bind('<Escape>', 'spawn fcitx-remote -t ;; leave-mode ;; fake-key <Escape>', mode='insert')
