@@ -8,6 +8,10 @@ c.url.searchengines = {
 
 c.url.default_page = "https://www.baidu.com"
 c.fonts.default_size = "15pt"
+c.fonts.hints = "bold 15pt default_family"
+
+# view for flash content(www-plugins/adobe-flash)
+c.content.plugins = True
 
 # Bindings for normal mode(Vimium compatible keybind)
 config.bind('x', 'tab-close')
