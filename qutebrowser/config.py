@@ -3,12 +3,14 @@ c.auto_save.session = True
 c.url.searchengines = {
     "DEFAULT": "https://www.baidu.com/s?wd={}",
     "awk": "https://wiki.archlinux.org/?search={}",
+    "gh": "https://github.com/search?q={}",
     "gwk": "https://wiki.gentoo.org/?search={}"
 }
 
 c.url.default_page = "https://www.baidu.com"
 c.fonts.default_size = "15pt"
 c.fonts.hints = "bold 15pt default_family"
+c.downloads.position = 'bottom'
 
 # view for flash content(www-plugins/adobe-flash)
 c.content.plugins = True
