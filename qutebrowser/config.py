@@ -28,6 +28,9 @@ config.bind('k', 'scroll-px 0 -100')
 
 config.bind('f', 'hint all tab-fg')
 
+# openup buffer list
+config.bind(',ls', 'set-cmd-text -s :buffer')
+
 config.bind('<Ctrl-p>', 'tab-prev', mode='normal')
 config.bind('<Ctrl-n>', 'tab-next', mode='normal')
 
