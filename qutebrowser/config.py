@@ -31,6 +31,9 @@ config.bind('f', 'hint all tab-fg')
 # openup buffer list
 config.bind(',ls', 'set-cmd-text -s :buffer')
 
+# toggle between two tabs(vim like toggle between two buffers)
+config.bind(',bb', 'tab-focus last')
+
 config.bind('<Ctrl-p>', 'tab-prev', mode='normal')
 config.bind('<Ctrl-n>', 'tab-next', mode='normal')
 
