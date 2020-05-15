@@ -12,7 +12,8 @@ c.fonts.default_size = "15pt"
 c.fonts.hints = "bold 15pt default_family"
 c.downloads.position = 'bottom'
 c.tabs.show = 'never'
-#c.downloads.remove_finished = 5000
+c.completion.height = '30%'
+c.downloads.remove_finished = 5000
 
 # view for flash content(www-plugins/adobe-flash)
 c.content.plugins = True

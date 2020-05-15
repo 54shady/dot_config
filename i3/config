@@ -9,7 +9,7 @@ set $mod Mod4
 # using xrandr to figure out display name
 set $display_device_name "HDMI2"
 set $terminal_name "terminator"
-set $browsers_name "firefox-bin"
+set $browsers_name "qutebrowser"
 set $mail_client "thunderbird"
 
 #exec --no-startup-id xcompmgr &
@@ -105,7 +105,7 @@ bar {
     status_command i3blocks -c ~/.config/i3/i3blocks.conf
 
     position top
-    mode hide
+    mode dock
     #workspace_buttons yes
     #tray_padding 0
     #separator_symbol "|"
@@ -143,6 +143,7 @@ assign [class="konsole"] $workspace1
 
 # bind browser to workspace2
 assign [class="Firefox"] $workspace2
+assign [class="qutebrowser"] $workspace2
 
 # bind mail to workspace3
 assign [class="Thunderbird"] $workspace3
