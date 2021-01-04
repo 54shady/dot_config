@@ -51,3 +51,6 @@ config.bind('<Ctrl-p>', 'fake-key <Up>', mode='insert')
 #config.bind('i', 'enter-mode insert ;; spawn fcitx-remote -t')
 #config.bind('gi', 'hint inputs --first ;; spawn fcitx-remote -t')
 #config.bind('<Escape>', 'spawn fcitx-remote -t ;; leave-mode ;; fake-key <Escape>', mode='insert')
+
+# turn off the notification
+c.content.notifications = False
