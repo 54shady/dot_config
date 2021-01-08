@@ -10,6 +10,7 @@ programs=(
 "dunst"
 "zathura"
 "mpv"
+".toprc"
 )
 
 for d in ${programs[@]}
@@ -18,8 +19,10 @@ do
 	# default direcotry already exist, remove it first.
 	if [ -d $DEFAULT_DIR ]; then
 		rm -rvf $DEFAULT_DIR
+		# link to the real config dir
+		ln -s $PWD/$d $HOME/.config/$d
+	elif [ -f ~/$d ]; then
+		rm -rvf ~/$d
+		ln -s $PWD/dot_${d##.} ~/$d
 	fi
-
-	# link to the real config dir
-	ln -s $PWD/$d $HOME/.config/$d
 done
