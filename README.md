@@ -1,5 +1,3 @@
-All the configuration files under .config directory
+# All the autoconfig goes to the dotfile project now
 
-run the deploy script
-
-	deploy.sh
+# Project Status(Abandon)

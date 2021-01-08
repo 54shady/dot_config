@@ -1,0 +1,121 @@
+// vim:ts=4:sw=4:et
+{
+    // splitv split container with 2 children
+    "border": "none",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "none",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 480,
+               "width": 960,
+               "x": 480,
+               "y": 300
+            },
+            "name": "No file - mpv",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^mpv$",
+               "instance": "^gl$",
+               "title": "^No\\ file\\ \\-\\ mpv$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "none",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 480,
+               "width": 960,
+               "x": 480,
+               "y": 300
+            },
+            "name": "No file - mpv",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^mpv$",
+               "instance": "^gl$",
+               "title": "^No\\ file\\ \\-\\ mpv$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // splitv split container with 2 children
+    "border": "none",
+    "floating": "auto_off",
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            // splitv split container with 1 children
+            "border": "none",
+            "floating": "auto_off",
+            "layout": "splitv",
+            "percent": 0.5,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "none",
+                    "current_border_width": 0,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 480,
+                       "width": 960,
+                       "x": 480,
+                       "y": 300
+                    },
+                    "name": "No file - mpv",
+                    "percent": 1,
+                    "swallows": [
+                       {
+                       "class": "^mpv$",
+                       "instance": "^gl$",
+                       "title": "^No\\ file\\ \\-\\ mpv$",
+                       "transient_for": "^$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        },
+        {
+            "border": "none",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 480,
+               "width": 960,
+               "x": 480,
+               "y": 300
+            },
+            "name": "No file - mpv",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^mpv$",
+               "instance": "^gl$",
+               "title": "^No\\ file\\ \\-\\ mpv$",
+               "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
